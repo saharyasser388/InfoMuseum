@@ -10,6 +10,8 @@ mysqlclient = "*"
 django-non-dark-admin = "*"
 pillow = "*"
 
+django-phonenumber-field = {extras = ["phonenumbers"], version = "*"}
+
 [dev-packages]
 
 [requires]

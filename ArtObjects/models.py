@@ -79,12 +79,12 @@ class Painting(models.Model):
     artist_name = models.CharField(max_length=255,null=True,blank=True)
     art_object = models.OneToOneField(ArtObject,on_delete=models.CASCADE,primary_key=True)
 
-    def __str__(self) -> str:
-        return self.art_object.name
+    #def __str__(self) -> str:
+        #return self.art_object.name
 
 class Holding(models.Model):
     material = models.CharField(max_length=255,null=True,blank=True)
     art_object = models.ForeignKey(ArtObject,on_delete=models.CASCADE)
 
-    def __str__(self) -> str:
-        return self.art_object.name
+    #def __str__(self) -> str:
+        #return self.art_object.name

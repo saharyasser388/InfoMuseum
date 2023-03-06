@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'BookingMuseum',
     'InfoMuseum',
     'debug_toolbar',
+    "phonenumber_field",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -87,7 +88,7 @@ WSGI_APPLICATION = 'Digital_Museum.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db1',
+        'NAME': 'db2',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': 'sahar1234',
@@ -135,10 +136,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-import os
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), ) 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/' 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
